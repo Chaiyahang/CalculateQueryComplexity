@@ -26,6 +26,7 @@
 		6B6FD4F61F05350C000FC217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6FD4F91F05350C000FC217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B6FD4FB1F05350C000FC217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BDB1A721F06021700B15127 /* CalculateQueryComplexity.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateQueryComplexity.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 				6B6FD4F81F05350C000FC217 /* LaunchScreen.storyboard */,
 				6B6FD4FB1F05350C000FC217 /* Info.plist */,
 				6B6FD4EA1F05350C000FC217 /* Supporting Files */,
+				6BDB1A721F06021700B15127 /* CalculateQueryComplexity.pch */,
 			);
 			path = CalculateQueryComplexity;
 			sourceTree = "<group>";
@@ -274,6 +276,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F84RCRBT66;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalculateQueryComplexity/CalculateQueryComplexity.pch;
 				INFOPLIST_FILE = CalculateQueryComplexity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianxi.CalculateQueryComplexity;
@@ -286,6 +290,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F84RCRBT66;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CalculateQueryComplexity/CalculateQueryComplexity.pch;
 				INFOPLIST_FILE = CalculateQueryComplexity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lianxi.CalculateQueryComplexity;
@@ -312,6 +318,7 @@
 				6B6FD5001F05350C000FC217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

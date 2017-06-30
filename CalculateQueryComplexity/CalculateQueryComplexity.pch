@@ -1,0 +1,32 @@
+//
+//  CalculateQueryComplexity.pch
+//  CalculateQueryComplexity
+//
+//  Created by CYH on 2017/6/30.
+//  Copyright © 2017年 Lianxi.com. All rights reserved.
+//
+
+#ifndef CalculateQueryComplexity_pch
+#define CalculateQueryComplexity_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//快速的查看一段代码的执行时间
+//使用方法：在想要查看执行时间的代码的地方进行这么处理
+//Any parameter:是为了区分startTime的参数名称的变化 以##来拼接
+/*
+ *  TICK(Any parameter)
+ *   //do your work here
+ *  TOCK(Any parameter)
+ */
+#ifndef __OPTIMIZE__
+#define TICK(timeName)   NSDate *startTime##timeName = [NSDate date];
+#define TOCK(timeName)   NSLog(@"Time %s: %f", #timeName, -[startTime##timeName timeIntervalSinceNow]);
+#else
+#define TICK(timeName)
+#define TOCK(timeName)
+#endif
+
+
+#endif /* CalculateQueryComplexity_pch */

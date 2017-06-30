@@ -102,6 +102,7 @@
      */
     //PS:
     //计算出(左区间：闭，右区间：开) [start1,end1),....,[startn,endn) 区间值 建立一个 key-value 的映射
+    TICK(mapTime)
     for (NSInteger i = 0; i < self.startsArray.count; i ++) {
         for (NSInteger j = [self.startsArray[i] integerValue]; j < [self.endsArray[i] integerValue]; j ++) {
             NSInteger value = [[self.mapMutaleDictionary valueForKey:[NSString stringWithFormat:@"%ld",j]] integerValue];
@@ -111,6 +112,7 @@
         NSLog(@"");
     }
     NSLog(@"mapMutaleDictionary : %@",self.mapMutaleDictionary);
+    TOCK(mapTime)
     
     NSLog(@"query : %@",self.queryArray);
     //通过映射
